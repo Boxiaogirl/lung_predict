@@ -15,7 +15,9 @@ install depndencies and required packages:
 
 pip install -r ./requirements.txt
 
-
+通过网盘分享的文件：CXR-RANet
+链接: https://pan.baidu.com/s/1yMnd-nODR3i9lb7WzHxtCg 提取码: XHCP 
+--来自百度网盘超级会员v4的分享
 
 extact and comnpress deep features, run as follows:
 
