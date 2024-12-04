@@ -28,12 +28,13 @@ pip install -r ./requirements.txt
 
 ## 2. File Sharing
 
-The following dataset can be accessed through the shared link:
+The following resources can be accessed through the shared link:
 
-- **CXR-RANet Dataset**  
+- **CXR-RANet Dataset, Pre-trained Model Files, and Code Packages**  
   Link: [https://pan.baidu.com/s/1yMnd-nODR3i9lb7WzHxtCg](https://pan.baidu.com/s/1yMnd-nODR3i9lb7WzHxtCg)  
   Extraction code: **XHCP**  
-  
+
+  **Note:** This link contains not only the dataset, but also the necessary pre-trained model files and required code packages for running the project. Ensure that you download all components to properly set up the environment.
 
 ---
 
