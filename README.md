@@ -1,98 +1,70 @@
-Lung Prediction Project
 
-Table of Contents
-Introduction
-Features
-Installation
-Clone the Repository
-Conda Environment Setup
-Dataset
-Usage
-Extract and Compress Deep Features
-Feature Selection and Classification
-Important Notes
-Contributing
-Acknowledgements
-License
-Introduction
-Welcome to the Lung Prediction Project repository! This project aims to predict lung conditions using deep learning and machine learning techniques. It leverages the CXR-RANet dataset for training and evaluation.
+# CXR-RANet
 
-Features
-Deep Feature Extraction: Extracts deep features from chest X-ray images.
-Feature Compression: Compresses the extracted features for efficient processing.
-Feature Selection: Selects the most relevant features for classification.
-Classification: Implements various classification algorithms to predict lung conditions.
-Preprocessed Data: Provides pre-extracted and compressed features to save time.
-Installation
-Clone the Repository
-First, clone this repository to your local machine:
+## 1. Setup Instructions
 
-bash
-Copy code
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
-Conda Environment Setup
-We recommend using Conda to manage the project dependencies. Follow the steps below to set up your environment:
+### Enter the code file directory:
+Use the `cd` command to navigate into the code directory.
 
-Create a Conda Environment:
+### Create and activate Conda environment:
 
-bash
-Copy code
-conda create --name lung_predict python=3.8
-Activate the Conda Environment:
+- **Create Conda environment:**
+  ```bash
+  conda create --name lung_predict python=3.8
+  ```
 
-bash
-Copy code
-conda activate lung_predict
-Install Dependencies and Required Packages:
+- **Activate Conda environment:**
+  ```bash
+  conda activate lung_predict
+  ```
 
-Ensure you have a requirements.txt file in the root directory of the repository. Install the dependencies using:
+### Install dependencies:
+Install the required packages by running:
+```bash
+pip install -r ./requirements.txt
+```
 
-bash
-Copy code
-pip install -r requirements.txt
-Dataset
-CXR-RANet
-The project uses the CXR-RANet dataset, which can be downloaded from Baidu Netdisk. Follow the link below to access the dataset:
+---
 
-Download Link: CXR-RANet on Baidu Netdisk
-Extraction Code: XHCP
-Note: This dataset is shared by a Baidu Netdisk Super Member (v4).
+## 2. File Sharing
 
-After downloading, extract the dataset and place it in the designated data directory as specified in the project configuration.
+The following dataset can be accessed through the shared link:
 
-Usage
-Extract and Compress Deep Features
-Due to the large size of the training dataset, extracting and compressing deep features can be time-consuming. To perform this step, run the following command:
+- **CXR-RANet Dataset**  
+  Link: [https://pan.baidu.com/s/1yMnd-nODR3i9lb7WzHxtCg](https://pan.baidu.com/s/1yMnd-nODR3i9lb7WzHxtCg)  
+  Extraction code: **XHCP**  
+  
 
-bash
-Copy code
+---
+
+## 3. Extracting and Compressing Deep Features
+
+To extract and compress deep features, run the following script:
+```bash
 python deep_feature_extract_compress.py
-This script will process the images and generate compressed deep features stored in compress_features.csv.
+```
 
-Feature Selection and Classification
-Once you have the compressed features, you can proceed with feature selection and classification by running:
+---
 
-bash
-Copy code
+## 4. Feature Selection and Classification
+
+Once the features are extracted and compressed, run the script below for feature selection and classification:
+```bash
 python feature_selection_and_classification.py
-This will train the classification models and output the performance metrics.
+```
 
-Important Notes
-Time-Consuming Process: Extracting and compressing deep features using deep_feature_extract_compress.py is highly time-consuming due to the large dataset size. To expedite the process, we provide pre-extracted and compressed deep features in the compress_features.csv file.
+---
 
-Using Preprocessed Data: If you prefer to skip the feature extraction step, you can directly use the provided compress_features.csv by running the feature_selection_and_classification.py script. This allows you to train the models and obtain the reported metrics without waiting for feature extraction.
+## 5. Important Notes
 
-Environment Consistency: Ensure that you are using the same Python version (3.8) and have all the required packages installed to avoid compatibility issues.
+- **Time Consumption:**  
+  Due to the large size of the training dataset, extracting and compressing deep features using `deep_feature_extract_compress.py` is time-consuming. As a result, we provide pre-compressed deep features stored in the `compress_features.csv` file.
 
-Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+- **Training with Pre-compressed Features:**  
+  Researchers can directly execute the `feature_selection_and_classification.py` script based on the pre-compressed features to perform training and obtain the reported metrics.
 
-Fork the repository.
-Create your feature branch: git checkout -b feature/YourFeature
-Commit your changes: git commit -m 'Add some feature'
-Push to the branch: git push origin feature/YourFeature
-Open a pull request.
-Acknowledgements
-We utilized open-source code repositories provided by various institutions and researchers. A special thanks to all the authors for their valuable contributions.
-CXR-RANet Dataset: Thanks to the contributors of the CXR-RANet dataset for providing the necessary data for this project.
+---
+
+## 6. Acknowledgements
+
+In this project, we utilized open-source code repositories provided by various institutions and researchers. We would like to express our gratitude to all the authors for their contributions.
