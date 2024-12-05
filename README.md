@@ -5,7 +5,7 @@
 
 ### Enter the code file directory:
 Use the `cd` command to navigate into the code directory.
-
+ 
 ### Create and activate Conda environment:
 
 - **Create Conda environment:**
